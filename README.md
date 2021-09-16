@@ -1,6 +1,9 @@
 # 【Unity】アプリにログイン機能をつけよう！
 ![画像1](/readme-img/UnityLogin.png)
 
+* 本サンプルは不具合がある場合、issue等から報告いただくようにお願いいたします
+* 作成日：2016/5（更新日：2020/11）
+
 ## 概要
 * [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『会員管理機能』を利用してUnityアプリにログイン機能を実装したサンプルプロジェクトです
 * 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
@@ -19,6 +22,7 @@
 * LG V20 plus (OS 8.0)
 * Unity 2020.1.8f1
 * iphone 7 14.0
+* Unity SDK v4.1.0
 
 ※上記内容で動作確認をしています。
 
