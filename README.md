@@ -17,10 +17,10 @@
 
 ## 動作環境
 
-* MacOS Big Sur 11.6 (20G165)
-* Android studio: 4.0
-* LG V20 plus (OS 8.0)
-* Unity 2020.3.20f1 (LTS)
+* MacOS Monterey version 12.5 
+* Android Studio Chipmunk | 2021.2.1 Patch 2
+* Pixle 2 - Android 13 (Simulator)
+* Unity 2021.3.3f1 (LTS)
 * iphone 7 14.0
 * Unity SDK v4.4.1
 
