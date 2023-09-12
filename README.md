@@ -2,7 +2,7 @@
 ![画像1](/readme-img/UnityLogin.png)
 
 * 本サンプルは不具合がある場合、issue等から報告いただくようにお願いいたします
-* 作成日：2016/5（更新日：2020/11）
+* 作成日：2016/5（更新日：2023/9）
 
 ## 概要
 * [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『会員管理機能』を利用してUnityアプリにログイン機能を実装したサンプルプロジェクトです
@@ -17,13 +17,13 @@
 
 ## 動作環境
 
-* Mac OS 12.5.1 (Monterey)
+* Mac OS 13.4.1 (Venture)
 * Android studio: 4.0
 * LG V20 plus (OS 8.0)
-* Unity 2020.3.20f1 (LTS)
-* Xcode Version 14.0
-* iPhone X (iOS 16)
-* Unity SDK v4.4.1
+* Unity 2022.2.19f1 (LTS)
+* Xcode Version 15.0
+* iPhone SE (iOS 17)
+* Unity SDK v5.1.1
 
 ※上記内容で動作確認をしています。
 
@@ -139,7 +139,7 @@ iOS端末でビルドを行うには、Unityで.xcodeprojファイルを作成�
 
 #### SDKのインポートと初期設定
 * ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_unity.html)をUnity版に書き換えたドキュメントをご用意していますので、ご活用ください
- 
+
 #### ロジック
  * `Loginsignin.cs`,`Logout.cs`にロジックを書いています
  * ログイン、会員登録、ログアウト部分の処理は以下のように記述されます　※ただし、左記処理以外のコードは除いています
@@ -153,7 +153,7 @@ public void Login ()
         print (UserName.text);
         print (PassWord.text);
 
-        //NCMBUserのインスタンス作成 
+        //NCMBUserのインスタンス作成
         NCMBUser user = new NCMBUser ();
 
         // ユーザー名とパスワードでログイン
@@ -178,15 +178,15 @@ public void Login ()
         print (PassWord.text);
 
 
-        //NCMBUserのインスタンス作成 
+        //NCMBUserのインスタンス作成
         NCMBUser user = new NCMBUser ();
-        
+
         //ユーザ名とパスワードの設定
         user.UserName = UserName.text;
         user.Password = PassWord.text;
-        
+
         //会員登録を行う
-        user.SignUpAsync ((NCMBException e) => { 
+        user.SignUpAsync ((NCMBException e) => {
             if (e != null) {
                 UnityEngine.Debug.Log ("新規登録に失敗: " + e.ErrorMessage);
             } else {
@@ -203,7 +203,7 @@ public void Login ()
 // ログアウト
 public void Logout_user ()
     {
-        NCMBUser.LogOutAsync ((NCMBException e) => { 
+        NCMBUser.LogOutAsync ((NCMBException e) => {
             if (e != null) {
                 UnityEngine.Debug.Log ("ログアウトに失敗: " + e.ErrorMessage);
             } else {
